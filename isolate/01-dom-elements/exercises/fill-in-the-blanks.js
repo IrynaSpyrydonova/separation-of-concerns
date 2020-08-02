@@ -1,5 +1,12 @@
 'use strict';
 
+/* Scavenger Hunt!
+
+  practice reading through all the element properties in the debugger
+  many of the answers are there if you look in the right place ;)
+
+*/
+
 const _1_element = document.createElement('input');
 const _1_test = _1_element.nodeName === 'INPUT';
 console.assert(_1_test, 'Test 1');
@@ -23,7 +30,9 @@ const _5_test = _5_element.className === 'wide-border';
 console.assert(_5_test, 'Test 5');
 
 const _6_element = document.createElement('textarea');
+
 _6_element.innerHTML = 'many many mumbling mice';
 const _6_test = _6_element.innerHTML === 'many many mumbling mice';
+
 console.assert(_6_test, 'Test 6');
 

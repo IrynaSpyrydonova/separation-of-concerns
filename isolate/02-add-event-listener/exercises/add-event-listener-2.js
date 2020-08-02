@@ -23,6 +23,7 @@ const authenticationHandler = () => {
 buttonEl.addEventListener('hover', authenticationHandler);
 
 
+
 // "click" the button once
 const clickEvent1 = new Event('hover');
 buttonEl.dispatchEvent(clickEvent1);
