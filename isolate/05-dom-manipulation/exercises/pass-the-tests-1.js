@@ -4,7 +4,7 @@ const divEl = document.createElement('ul');
 divEl.innerHTML = `
   <p></p>
   <section></section>
-  <h1><h1>
+  <h1></h1>
 `;
 console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
@@ -14,6 +14,12 @@ console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 //  remove the <h1>
 //  append something to the end
 
+const nav = document.createElement('nav');
+
+divEl.replaceChild(nav, divEl.children[0]);
+divEl.insertBefore(document.createElement('h2'), divEl.children[1]);
+divEl.removeChild(divEl.children[3]);
+divEl.appendChild(document.createElement('p'));
 
 
 // --- --- --- --- --- ---

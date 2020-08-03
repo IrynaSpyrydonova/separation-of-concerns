@@ -15,6 +15,16 @@ console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
 
+const letters = ['a', 'b', 'c', 'd'];
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
+    const tbodyEL = divEl.children[0].children[0];
+    const trEl = tbodyEL.children[i];
+    const tdEl = document.createElement('td');
+    trEl.appendChild(tdEl);
+    tdEl.innerHTML= letters.shift();
+  }
+}
 
 
 

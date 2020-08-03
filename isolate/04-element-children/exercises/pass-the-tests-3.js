@@ -20,7 +20,15 @@ console.log(divEl.nodeName, divEl.cloneNode(true));
 // --- write some code ---
 //  you will need to access and update each <td> element
 
-
+const letters = ['a', 'b', 'c', 'd'];
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
+    const tbodyEL = divEl.children[0].children[0];
+    const trEl = tbodyEL.children[i];
+    const tdEl = trEl.children[j];
+    tdEl.innerHTML= letters.shift();
+  }
+}
 
 
 // --- --- --- --- --- ---
